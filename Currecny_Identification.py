@@ -17,7 +17,7 @@ def to_markdown(text):
 st.title('Currency description')
 
 genai.configure(api_key=st.secrets["api_key"])
-model = genai.GenerativeModel('gemini-pro-vision')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 uploaded_file = st.file_uploader(
     "Upload a currency note or coin.", type=["jpg", "png", "jpeg"])
